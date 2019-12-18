@@ -1,22 +1,15 @@
-import io.appium.java_client.AppiumDriver;
+package common;
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import tests.BaseTest;
 
 
-public  class ObjectRepo {
-	public static AppiumDriver driver;
-	private static WebElement element = null;
-	public static By element1 = null;
-
-	public static void setDriver(AppiumDriver driverInstance) {
-		driver = driverInstance;
-
-	}
-//	public static WebElement findElement (By WB , AndroidDriver driver){
-//
-//		element= driver.findElement(WB);
-//
-//		return element;
+public  class ObjectRepo extends BaseTest {
+//	public static AndroidDriver<?> driver;
+//	private static WebElement  element = null;
+//	public static By element1 = null;
+//	public static void setDriver(AndroidDriver driverInstance) {
+//		driver = driverInstance;
 //
 //	}
 
@@ -27,12 +20,13 @@ public  class ObjectRepo {
 	public static By TermsAndConditionsOKBtn;
 
 	
-	ObjectRepo(String platform)
+	public static void ObjectRepo(String platform)
+
 	{
 	
 	switch (platform)
 	{
-	case "nativeAndroid":
+	case "native-android":
 		
 	{
 		nativeAndroid();
@@ -53,7 +47,7 @@ public  class ObjectRepo {
 
 
 
-	private void nativeIOS() {
+	private static void nativeIOS() {
 
 		TermsAndConditionsTitle = By.id("pageTitle");
 		TermsAndConditionsFooter = By.id("hu.vodafone.apps.myvodafone:id/footer");
@@ -62,7 +56,7 @@ public  class ObjectRepo {
 
 	}
 
-	private void nativeAndroid() {
+	private static void nativeAndroid() {
 		TermsAndConditionsTitle = By.id("pageTitle");
 		TermsAndConditionsFooter = By.id("hu.vodafone.apps.myvodafone:id/footer");
 		TermsAndConditionsCancelBtn = By.id("cancel_button");

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mobile Test">
+    <parameter name="platform" value="native-android"></parameter>
+    <parameter name="DEVICE_NAME" value="S8"></parameter>
+
+
+    <test name="Test">
+
+        <parameter name="PLATFORM_NAME" value="Android" />
+        <parameter name="APPIUM_VERSION" value="1.10.0" />
+        <parameter name="DEVICE_NAME" value="ce0417142ca460bf0d" />
+        <parameter name="PLATFORM_VERSION" value="9" />
+        <parameter name="mSSDIN" value="" />
+        <parameter name="MSSDIN" value="" />
+        <parameter name="udid" value=""></parameter>
+        <parameter name="host" value="http://127.0.0.1:4723/wd/hub"></parameter>
+        <parameter name="bundleId" value=""></parameter>
+        <parameter name="appActivity" value="hu.vodafone.apps.myvodafone.splash.view.VFHUSplashActivity" />
+        <parameter name="appPackage" value="hu.vodafone.apps.myvodafone" />
+        <parameter name="AUTOMATION_NAME" value="Appium"/>
+        <classes>
+
+
+
+            <class name="tests.Login"/>
+<!--        <class name="screens.TermsAndConditions"/>-->
+
+
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

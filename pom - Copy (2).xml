@@ -85,7 +85,7 @@
             </properties>-->
 
             <suiteXmlFiles>
-              <!-- pass testng.xml files as argument from command line -->
+              <!-- pass testng-Native-Android.xml files as argument from command line -->
               <suiteXmlFile>native-android-suite.xml</suiteXmlFile>
             </suiteXmlFiles>
 
