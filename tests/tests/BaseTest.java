@@ -57,14 +57,7 @@ abstract public class BaseTest {
 	}
 
 
-//	@BeforeAll
-//	static void setUpBeforeClass() throws Exception {
-//
-//	}
 
-//	@AfterAll
-//	static void tearDownAfterClass() throws Exception {
-//	}
 
 	@BeforeTest
 	@Parameters({"APPIUM_VERSION", "PLATFORM_VERSION", "PLATFORM_NAME", "AUTOMATION_NAME", "DEVICE_NAME", "udid", "appActivity", "appPackage", "bundleId", "host"})
@@ -94,44 +87,6 @@ abstract public class BaseTest {
 		capabilities.setCapability("appPackage", appPackage);
 
 		driver = new AppiumDriver<>(new URL(host), capabilities);
-//
-//public void setUp() throws MalformedURLException{
-//		DesiredCapabilities capabilities = new DesiredCapabilities();
-//				capabilities.setCapability(MobileCapabilityType.APPIUM_VERSION, "1.10.0");
-//				capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9");
-//				capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
-//				capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"Appium");
-//				capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "ce0417142ca460bf0d");
-//				capabilities.setCapability("newCommandTimeout", 2000);
-//				capabilities.setCapability("appActivity", "hu.vodafone.apps.myvodafone.splash.view.VFHUSplashActivity");
-//				capabilities.setCapability("appPackage", "hu.vodafone.apps.myvodafone");
-//
-//				driver = new AppiumDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-
-//
-//			}
-//			break;
-//
-//			case  "nativeIOS":
-//			{
-//				capabilities.setCapability(MobileCapabilityType.APPIUM_VERSION, "1.13");
-//				capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.4");
-//				capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"iOS");
-//				capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"XCUITest");
-//				capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone");
-//				capabilities.setCapability("newCommandTimeout", 2000);
-//				capabilities.setCapability("udid", "");
-//				capabilities.setCapability("bundleId", "");
-//				capabilities.setCapability("autoDismissAlerts",true);
-//
-//				driver = new AppiumDriver<>(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
-//			}
-//			break;
-//			default:
-//				System.out.println("Choose platform as per naming convention. ie nativeAndroid");
-//				break;
-//			}
-
 	}
 
 
