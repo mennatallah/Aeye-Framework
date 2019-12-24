@@ -85,6 +85,8 @@ abstract public class BaseTest {
 		capabilities.setCapability("bundleId", bundleId);
 		capabilities.setCapability("appActivity", appActivity);
 		capabilities.setCapability("appPackage", appPackage);
+		capabilities.setCapability("noReset", "true");
+		capabilities.setCapability("fullReset", "false");
 
 		driver = new AppiumDriver<>(new URL(host), capabilities);
 	}
@@ -92,7 +94,7 @@ abstract public class BaseTest {
 
 	@AfterTest
 	void tearDown() throws Exception {
-	//driver.quit();
+	driver.quit();
 
 
 	}
